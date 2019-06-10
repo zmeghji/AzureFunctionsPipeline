@@ -20,6 +20,7 @@ namespace AzureFunctionsPipeline
                 Route = null
             )] HttpRequest req,
             [Queue("jobs")] IAsyncCollector<Job> jobQueue,
+            [Table("jobs")] IAsyncCollector<Job> jobTable,
             ILogger log)
         {
             log.LogInformation("C# HTTP trigger function started.");
@@ -27,6 +28,9 @@ namespace AzureFunctionsPipeline
                 await new StreamReader(req.Body).ReadToEndAsync()
                 );
             await jobQueue.AddAsync(job);
+            job.PartitionKey = "jobs";
+            job.RowKey = Guid.NewGuid().ToString();
+            await jobTable.AddAsync(job);
             log.LogInformation("C# HTTP trigger function complete.");
             return new OkResult();
         }

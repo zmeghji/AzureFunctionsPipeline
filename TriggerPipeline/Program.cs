@@ -16,7 +16,7 @@ namespace TriggerPipeline
                 SetBasePath(Directory.GetCurrentDirectory()).
                 AddJsonFile("local.settings.json");
             var configuration = configurationBuilder.Build();
-            var url = configuration.GetSection("WebHookURL").Value;
+            var url = configuration.GetSection("WebHookURLAzure").Value;
 
             var client = new HttpClient();
             var job = new Job { HostName = "machine 1", SoftwareName = "7-zip" };

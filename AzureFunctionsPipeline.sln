@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28917.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctionsPipeline", "AzureFunctionsPipeline\AzureFunctionsPipeline.csproj", "{3E8A720A-7E67-4CF8-91A4-6A794AA6147E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunctionsPipeline", "AzureFunctionsPipeline\AzureFunctionsPipeline.csproj", "{3E8A720A-7E67-4CF8-91A4-6A794AA6147E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctionsCommon", "AzureFunctionsCommon\AzureFunctionsCommon.csproj", "{1AF05BE6-22D9-44BF-94E2-6A9D27FBF73D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunctionsCommon", "AzureFunctionsCommon\AzureFunctionsCommon.csproj", "{1AF05BE6-22D9-44BF-94E2-6A9D27FBF73D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriggerPipeline", "TriggerPipeline\TriggerPipeline.csproj", "{23632A14-5EDB-4EA1-89FB-8B73D001537E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TriggerPipeline", "TriggerPipeline\TriggerPipeline.csproj", "{23632A14-5EDB-4EA1-89FB-8B73D001537E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
